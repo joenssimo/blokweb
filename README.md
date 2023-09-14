@@ -16,10 +16,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Auteur:
-  Sanne 't Hooft (vervangen door jouw naam)
+  Jens Simonatti
 
   #### Je startniveau:
-  hier je startniveau (kies uit zwart, rood óf blauw)
+Blauw
 
   #### Je focus:
   hier je focus (kies uit responsive óf surface plane)
@@ -36,11 +36,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-  link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
+  https://pleasuresnow.com/collections/shopp
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  homepage/shop van kledingmerk genaamd Pleasures. 
+  <img src="https://pleasuresnow.com/collections/shop" width="375px" alt="homepagina en shop van het kledingmerk Pleasures">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   hier de naam van de pagina  
@@ -88,30 +88,41 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Opzich heb ik een goed begin. De HTML en de CSS zien er netjes uit. Ik moet vooral comment in de CSS schrijven waar ik laat zien wat welke styling doet. Verder kan ik meer oefeningen maken om de stof te gaan begrijpen. In de navbar heb ik een container te veel (Nav & section). De video die ik als achtergrond wil gaan gebruiken moet nog styling krijgen om het correct te laten werken. Tot slot is het belangrijk om een H1 te maken en pixeleenheden te veranderen in em. Ook is het belangrijk om mijn html document geoordent houdt.
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | student 1 (Jens) 
+  - Navbar logo centreren
+  - video op achtergrond plaatsen
+  - border om geheel heen 
+  
+  | student 2   
+  | student 3    
+  | student 4        
+ 
+ 
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+   
+
+  - H1 toevoegen
+  - css comments maken
+  - navbar container te veel (nav&section)
+  - em als eenheid gebruiken ipv. pixels.
+  - HTML ordenen
+  - Niet te veel tijd verspillen op te lastige styling
+
+  
 
 </details>
 
-
+ Opzich heb ik een goed begin. De HTML en de CSS zien er netjes uit. Ik moet vooral comment in de CSS schrijven waar ik laat zien wat welke styling doet. Verder kan ik meer oefeningen maken om de stof te gaan begrijpen. In de navbar heb ik een container te veel (Nav & section). De video die ik als achtergrond wil gaan gebruiken moet nog styling krijgen om het correct te laten werken. Tot slot is het belangrijk om een H1 te maken en pixeleenheden te veranderen in em. Ook is het belangrijk om mijn html document geoordent houdt.
 
 
 
