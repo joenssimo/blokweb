@@ -7,22 +7,38 @@
     <title>Home</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
+
+
+
 <body>
+
+
+
+
 
     <header>
 
     
          <nav>
             
-                <img src="./assets/images/hamburgermenu.png" alt="hamburgermenu knop">
+                <img  tabindex=0 class="hamburgermenuknop" src="./assets/images/hamburgermenu.png" alt="hamburgermenu knop">
                 <img src="./assets/images/logo" alt="logo pleasures">
-                <div><img src="./assets/images/vergrootglas.png" alt="zoek knop">
-                <img src="./assets/images/winkeltas.png" alt="winkelwagentje knop">
+                <div><img tabindex="0" src="./assets/images/vergrootglas.png" alt="zoek knop">
+                <img tabindex="0" src="./assets/images/winkeltas.png" alt="winkelwagentje knop">
                 </div>
             
          </nav>
 
-        
+        <section class="hamburgermenusectie">
+            <ul>
+                <li tabindex="0">Clothing</li>
+                <li tabindex="0">Accesories</li>
+                <li tabindex="0">Pizza delivery</li>
+                <li tabindex="0">Yoga classes</li>
+                <li tabindex="0">dog walking service</li>
+            </ul>
+        </section>
 
     </header>
 
@@ -31,15 +47,22 @@
     <main>
         
         <section>
-                 <img src="./assets/images/schuifafbeelding.png" alt="collagekunstwerk met afbeeldingen van hert, oog, computer en gras">
+                
+                 <img src="./assets/images/handen_achtergrond.jpeg" alt="handen die van bovenkomen">
+                 <img src="./assets/images/bom.jpeg" alt="dikke vette atoombom met smiley">
+                 <img src="./assets/images/handen.jpeg" alt="drie handen die naar elkaar rijken">
+                 <img src="./assets/images/wortel" alt="vrouwenmond die wortel afbijt">
+                 <img src="./assets/images/computer" alt="ouderwetse computer">
         </section>
        
-       
+       <section>
+        <h1>shop our items</h1>
+       </section>
         
     
 
         <section>
-            <h2>Filter</h2>
+           <h2 tabindex=0>Filter</h2>
         </section>
 
 
@@ -51,17 +74,18 @@
        
         <ul>
             <li> <a href="./detailpagina.html"><img src="./assets/images/blauw" alt="blauw korte mouwen overhemd met bedrukking van twee gezichten"></a></li> 
-            <li><img src="./assets/images/blauw2" alt="tshirt met bedrukking van twee gezichten"></li>
-            <li><img src="./assets/images/martians.jpg" alt="tshirt met tekst waarop staat the martians are coming to save the earth"></li>
-            <li><img src="./assets/images/paraplu" alt="paraplu met bedrukking van gezicht"></li>
-            <li><img src="./assets/images/banaan" alt="zwart korte mouwenoverhemnd met bananen en middelvingerprint"></li> 
-            <li><img src="./assets/images/vaas" alt="vaas met beschilderingen van het laatste avondmaal van Leonardo Da Vinci"></li>
+            <li><img tabindex=0 src="./assets/images/blauw2" alt="tshirt met bedrukking van twee gezichten"></li>
+            <li><img tabindex=0 src="./assets/images/martians.jpg" alt="tshirt met tekst waarop staat the martians are coming to save the earth"></li>
+            <li><img tabindex=0 src="./assets/images/paraplu" alt="paraplu met bedrukking van gezicht"></li>
+            <li><img tabindex=0 src="./assets/images/banaan" alt="zwart korte mouwenoverhemnd met bananen en middelvingerprint"></li> 
+            <li><img tabindex=0 src="./assets/images/vaas" alt="vaas met beschilderingen van het laatste avondmaal van Leonardo Da Vinci"></li>
         </ul>
        
     </section>
 
     <section>   
-         <marquee>STEAL YOUR PARENTS' CREDIT CARD AND SPEND THEIR MONEY!</marquee>
+        
+         <marquee behavior="scroll" direction="left" scrollamount="25">STEAL YOUR PARENTS' CREDITCARD AND SPEND ALL OF THEIR MONEY ON OUR STUFF!</marquee>
     
     </section>
 
@@ -72,14 +96,14 @@
     <footer>
 
     <section>
-        <h3>search</h3>
-        <h3>contact</h3>
-        <h3>accessibility</h3>
+        <h3 tabindex="0">search</h3>
+        <h3 tabindex="0">contact</h3>
+        <h3 tabindex="0">accessibility</h3>
     </section>
 
     <section>
         <form>
-            <label form="E-mail">E-mail</label>
+            <label for="E-mail">E-mail</label>
             <input type="text" name="E-mail" id="E-mail" placeholder="Email">
         </form>
 
@@ -96,6 +120,6 @@
 
 
 </footer>
-
+<script defer src="./script.js"></script>
 </body>
 </html>

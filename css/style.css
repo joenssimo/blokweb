@@ -1,6 +1,7 @@
 * {
     margin: 0;
 }
+/* 🅙🅔🅝🅢 */
 
 @font-face {
     font-family: 'koptekst';
@@ -8,13 +9,15 @@
 }
 
 body {
-    background-color: #d0d0d0;
+    background-color: var(--hoofdkleur)
     
 }
 
 nav{
     z-index: 5;
 }
+
+/*HAMBURGERMENU KNOP EN ZOEK KNOP*/
 
 header nav img:first-of-type {
  height: 40%;
@@ -31,10 +34,90 @@ box-shadow: 3px 3px 6px grey;;
 font-size: large;
 transition: ease-in-out .2s;
 scale:1.2;
+cursor: pointer;
+}
+
+header nav img:first-of-type:active{
+    background-color: #00f900;
+}
+
+header nav img:first-of-type:focus{
+    outline-color: #00f900;
+    background-color: #00f900;
+    box-shadow: 3px 3px 6px grey;
+
 }
 
 
 
+/* HAMBURGERMENU UITGEKLAPT */
+
+header section{
+translate: -50em;
+position: fixed;
+top: 0;
+left: 0;
+z-index: 4;
+background-color: var(--hoofdkleur);
+transition: all .5s ease-in-out;
+}
+
+
+header section ul{
+    font-family: 'koptekst';
+    line-height: 14.95px ;
+    color: #202020;
+    opacity: 85%;
+    text-shadow: 1px 1px 2px grey; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: flex-start;
+}
+
+header section ul li{
+    transition: ease-in-out .2s;  
+}
+
+header section ul li:hover{
+    text-shadow: 5px 5px 5px grey; 
+    font-size: large;
+    transition: ease-in-out .2s;
+    cursor: pointer;
+}
+
+header section ul li:focus{
+    outline-color: #00f900;
+    text-shadow: 5px 5px 5px grey; 
+    font-size: large;
+    transition: ease-in-out .2s;
+}
+
+header section ul li:active{
+    color: var(--hoofdkleur);
+}
+
+header section ul li:focus{
+    outline-color: #00f900;
+    background-color: #00f900;
+}
+
+.hamburger_uitgeklapt{
+    translate: 0em;
+}
+
+
+header section ul{
+    border: 2px black solid;
+    padding: 5em;
+    list-style: none;    
+    height: 40vh;
+    width: 50vw;
+ 
+
+}
+
+/* LOGO */
 
 header nav > img:nth-of-type(2) {
     width: 80%;
@@ -78,22 +161,151 @@ header nav div img:nth-of-type(2):hover{
     font-size: large;
     transition: ease-in-out .2s;
     scale: 1.2;
+    cursor: pointer;
+}
+
+header nav div img:nth-of-type(2):active{
+    background-color: #00f900;
+}
+
+header nav div img:nth-of-type(2):focus{
+    outline-color: #00f900;
+    background-color: #00f900;
+    box-shadow: 3px 3px 6px grey;
 }
 
 header nav {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   position: fixed;
-   background-color: #d0d0d0;
+   background-color: var(--hoofdkleur);
    border: 2px black solid;
 }
 
 
+/* FOTOCOLLAGE MET ANIMATIES */
 
-main section:nth-of-type(1) img{
- width: 100%;
- margin-top: 5em;
+
+main section:first-of-type{
+    position: relative;
+    top: 0em;
+    left: 0em;
 }
+
+main section:nth-of-type(1) img:nth-of-type(1){
+    width: 100%;
+    position: relative;
+    top: 0%;
+    left: 0%;
+    
+}
+
+main section:nth-of-type(1) img:nth-of-type(2){
+    width: 100%;
+    position: absolute;
+    scale: 0.3;
+    top: 8em;
+    right: 5em;
+    border: 2px black solid;
+    padding: .5em;
+    padding-top: 2em;
+    background-color:  #d0d0d0;
+    animation-name: bounce;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes bounce {
+    0% {
+scale: 0.3;
+    }
+
+    100% {
+scale: 0.4;
+    }
+}
+
+main section:nth-of-type(1) img:nth-of-type(3){
+    width: 100%;
+    position: absolute;
+    scale: 0.4;
+    top: 5em;
+    left: 5em;
+    border: 2px black solid;
+    padding: .5em;
+    padding-top: 2em;
+    background-color:  #d0d0d0; 
+    animation-name: wiggle;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes wiggle {
+     0% {
+        transform: rotate(-4deg);
+      }
+      50% {
+        transform: rotate(4deg);
+      }
+      100% {
+        transform: rotate(-4deg);
+}
+}
+
+
+main section:nth-of-type(1) img:nth-of-type(4){
+    width: 100%;
+    position: absolute;
+    scale: 0.6;
+    top: 1em;
+    right: 3em;
+    border: 2px black solid;
+    padding: .5em;
+    padding-top: 2em;
+    background-color:  #d0d0d0;  
+    animation-name: floating;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; 
+}
+
+@keyframes floating {
+    0% {
+      transform: translateY(0%);
+    }
+    50% {
+      transform: translateY(8%);
+    }
+    100% {
+      transform: translateY(0%);
+            }}
+
+main section:nth-of-type(1) img:nth-of-type(5){
+    width: 100%;
+    position: absolute;
+    scale: 0.5;
+    top: 17em;
+    left: 3em;
+    border: 2px black solid;
+    padding: .5em;
+    padding-top: 2em;
+    background-color:  #d0d0d0;  
+    animation-name: heenenweer;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; 
+}
+
+@keyframes heenenweer {
+    100% {
+      transform: translate(50px, 0);
+    }
+}
+
+/* KLEDINGITMES  */
+
 
 main ul {
     display: grid;
@@ -109,13 +321,37 @@ display: block;
 
 }
 
+main ul img:focus{
+    outline-color: #00f900;   
+}
+
+
 main section:first-of-type {
     border: 2px black solid;
     padding: 0.5em;
     
 }
 
-main section:nth-of-type(2) h2 {
+/* SHOP OUR ITEMS */
+
+main section:nth-of-type(2){
+    font-family: 'koptekst';
+    font-size: 12.35px;
+    line-height: 14.95px ;
+    color: #202020;
+    opacity: 85%;
+    text-shadow: 1px 1px 2px grey;
+    letter-spacing: 0.5em;
+    display: flex;
+    justify-content: space-around;
+    padding: 2em;
+    border: 1px black solid;
+    justify-content: flex-start;
+}
+
+/* FILTER */
+
+main section:nth-of-type(3) h2 {
     margin-left: 0.5em;
         margin-top:.5em;
     margin-bottom: .5em;
@@ -128,9 +364,16 @@ main section:nth-of-type(2) h2 {
     letter-spacing: .2em;
 }
 
-main section:nth-of-type(2) h2:hover{
+main section:nth-of-type(3) h2:hover{
     text-decoration: underline;
+    cursor: pointer;
 }
+
+main section:nth-of-type(3) h2:focus{
+    outline-color: #00f900;
+}
+
+
 
 main video{
  width: 100%;
@@ -139,13 +382,13 @@ main video{
  margin-right: 0.2em;
 }
 
-main section:nth-of-type(2){
+main section:nth-of-type(3){
     color: black;
     display: flex;
     text-align: left;
 }
 
-main section:nth-of-type(3){
+main section:nth-of-type(4){
     display: flex;
 }
  footer section:first-of-type{
@@ -160,11 +403,14 @@ padding: 2em;
 margin-top: 2em;
  }
 
- main section:nth-of-type(4) marquee{
-    font-size: 7em;
+ main section:nth-of-type(5) marquee{
+    font-size: 6em;
     font-family: 'koptekst';
     color: #202020;
  }
+
+
+/* SEARCH CONTACT ACCESSIBILITY */
 
 footer section:first-of-type h3{
     transition: ease-in-out .2s;
@@ -174,9 +420,16 @@ footer section:first-of-type h3{
     text-shadow: 5px 5px 5px grey; 
     font-size: large;
     transition: ease-in-out .2s;
+    cursor: pointer;
     
  }
 
+ footer section:first-of-type h3:focus{
+    outline-color: #00f900;
+    text-shadow: 5px 5px 5px grey; 
+    font-size: large;
+    transition: ease-in-out .2s;
+ }
 
 footer section:nth-of-type(2) {
     font-family: 'koptekst';
@@ -194,6 +447,8 @@ footer section:nth-of-type(2) {
 
  }
 
+/* MAIL KNOP */
+
  footer section:nth-of-type(2) button{
     border-radius: 0%;
     border: 1px black solid;
@@ -209,9 +464,19 @@ footer section:nth-of-type(2) button:hover{
     height: 3.3em;
     margin-top: 1.1em; 
     background-color: #00f900;
+    cursor: pointer;
 }
 
+footer section:nth-of-type(2) button:active{
+    background-color: whitesmoke;
+}
 
+footer section:nth-of-type(2) button:focus{
+    background-color: #00f900;
+    outline-color: #00f900;
+}
+
+/* MAIL FORM */
 
  footer section:nth-of-type(2) form input[type=text]{
 width: 20em;
@@ -221,6 +486,17 @@ border: 1px black solid;
 height: 3em;
 }
 
+footer section:nth-of-type(2) form input[type=text]:hover{
+   background-color: whitesmoke;
+}
+
+footer section:nth-of-type(2) form input[type=text]:focus{
+    outline-color: #00f900;
+
+}
+
+
+/* SIGN YOUR LIFE AWAY, JUST KIDDING STAY CONNECTED */
 
 
 footer section:nth-of-type(3) h2{
@@ -235,7 +511,7 @@ footer section:nth-of-type(3) h2{
 }
 
 
-
+/* AFBEELDINGEN OVERHEMD */
 
 .detail_pagina main section:nth-of-type(2) img {
     width: 80%;
@@ -252,6 +528,8 @@ footer section:nth-of-type(3) h2{
     margin-left: 3em;
     gap: 1em;
 }
+
+/* TITEL OVERHEMD */
 
 .detail_pagina main section:nth-of-type(3) h1 {
     font-family: 'koptekst' ;
@@ -281,9 +559,22 @@ transition: ease-in-out .1s;
 }
 
 .detail_pagina main section:nth-of-type(5) button:hover{
-     box-shadow: 3px 3px 6px grey;;
+box-shadow: 3px 3px 6px grey;;
 transition: ease-in-out .1s;
 padding: 1.2em;
+cursor: pointer;
+}
+
+.detail_pagina main section:nth-of-type(5) button:active{
+    background-color: #00f900;
+}
+
+.detail_pagina main section:nth-of-type(5) button:focus{
+    outline-color: #00f900;
+    box-shadow: 3px 3px 6px grey;;
+    transition: ease-in-out .1s;
+    padding: 1.2em;
+    cursor: pointer;
 }
 
 .detail_pagina main section:nth-of-type(5) button:first-of-type{
@@ -301,5 +592,72 @@ padding: 1.2em;
     margin-top: 0.5em;
 }
 
+.detail_pagina main section:nth-of-type(7) button{
+    background-color:#00f900;
+    border-radius: 0%;
+    border: black 1px solid;
+    padding-left: 6em;
+    padding-right: 6em;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+    margin-left: 5em;
+    margin-top: 1em;
+    font-family: 'koptekst';
+    opacity: 85%;
+    text-shadow: 1px 1px 2px grey;
+    font-size: small;
+    transition: ease-in-out .2s;
+}
+
+.detail_pagina main section:nth-of-type(7) button:hover{
+    box-shadow: 3px 3px 6px grey;;
+    transition: ease-in-out .2s;
+    scale: 1.1;
+    cursor: pointer;
+}
 
 
+
+.detail_pagina main section:nth-of-type(7) button:active{
+   background-color: whitesmoke;
+}
+
+.detail_pagina main section:nth-of-type(7) button:focus{
+    outline-color: #00f900;
+}
+
+
+
+
+
+:root{
+    --hoofdkleur: #d0d0d0;
+}
+
+@media (prefers-color-scheme:dark){
+    :root{
+        --hoofdkleur: #FF69B4
+        /* --hoofdkleur: 	#800080
+        --hoofdkleur: #A9A9A9 */
+        
+    }
+}
+
+
+
+
+@media (prefers-reduced-motion){
+    main section:nth-of-type(1) img:nth-of-type(3),
+    main section:nth-of-type(1) img:nth-of-type(2),
+    main section:nth-of-type(1) img:nth-of-type(3),
+    main section:nth-of-type(1) img:nth-of-type(4),
+    main section:nth-of-type(1) img:nth-of-type(5),
+    main video
+
+    
+    {
+        animation-play-state: paused;
+        
+        
+}
+}
